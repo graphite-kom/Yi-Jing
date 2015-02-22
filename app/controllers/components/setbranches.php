@@ -97,7 +97,7 @@ class setbranchesComponent extends Object{
 			for($i = 0; $i < 3; $i++){
 
 				if(($infIndex + $i) > 5){
-					$branchInf['keys'][] = ($infIndex + $i) - 5;
+					$branchInf['keys'][] = ($infIndex + $i) - 6;
 				}else{
 					$branchInf['keys'][] = ($infIndex + $i);
 				}
@@ -108,7 +108,7 @@ class setbranchesComponent extends Object{
 			for($i = 0; $i < 3; $i++){
 
 				if(($supIndex + $i) > 5){
-					$branchSup['keys'][] = ($supIndex + $i) - 5;
+					$branchSup['keys'][] = ($supIndex + $i) - 6;
 				}else{
 					$branchSup['keys'][] = ($supIndex + $i);
 				}
@@ -118,7 +118,8 @@ class setbranchesComponent extends Object{
 		$trigramIndexes = array('branchSup' => $branchSup, 'branchInf' => $branchInf);
 
 		return $trigramIndexes;
-	}/// END getProperIndex
+
+	} /// END getProperIndex
 
 
 	////////////////////////////////////////////////////////////
