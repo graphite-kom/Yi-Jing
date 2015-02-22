@@ -1,0 +1,141 @@
+/* CSS Document */
+
+.mainDiv{
+	clear: both;
+}
+
+.traitTable, .traitMainTable {
+	width:auto;
+}
+
+.mainCell{
+	width: 1000px;
+	margin: auto;
+}
+
+.hexagramCell{
+	padding:0;
+	margin:0;
+}
+
+.hexToHexCellLeft, .hexToHexCellRight, .hexToHexCell {
+	text-align: center;
+	font-weight: bold;
+}
+
+.hexToHexCellLeft img, .hexToHexCellLeft div{
+	float: right;
+	margin-left: 25px;
+}
+
+.hexToHexCellRight img, .hexToHexCellRight div{
+	float: left;	
+	margin-right: 25px;
+}
+
+.traitTable tr td{
+	/*padding: 0 0 0 0;
+	margin: 0 0 0 0;*/
+}
+
+.hexViewHeader{
+	white-space:nowrap;	
+	background-color:#f4f4f4;
+	padding:5px 10px;
+	float:left;
+	width:100%;
+	/*background-color:#006633;*/
+}
+
+.hexagramHeader-th{
+	font-size:20px;
+	padding:5px 5px;
+	border-bottom:1px solid #333333;
+	/*background-color:#ff0000;*/
+}
+
+.hexagramHeader-th a{
+	text-decoration:none;
+}
+
+.hexagramHeader{
+	background-color:#fff;
+	padding:5px 5px;
+	margin:5px 5px 0 0;
+	float:left;
+}
+
+.hexagramHeaderBreak{
+	background-color:#fff;
+	padding:5px 5px;
+	margin:5px 5px 0 0;
+	float:left;
+	clear:left;
+}
+
+.hexAttribute{
+	font-weight:bold;
+}
+
+.traitAttribute{
+	font-size:10px;
+	font-style:italic;
+	/*font-weight:bold;*/
+	padding:8px 4px 0 4px;
+}
+
+.selfCell{
+	padding:5px 0 4px 3px;
+	margin:0;
+}
+
+.animalCell{
+	padding:5px 0 4px 2px;
+	margin:0;
+}
+
+.traitCell{
+	padding:5px 5px 4px 5px;
+	margin:0;
+}
+.otherPictos{
+	margin:0;
+	padding:0;
+}
+
+.otherPictos img{
+	float:left;
+	margin:5px 4px 0 3px;
+}
+
+.chDate{
+	font-size:16px;
+	font-weight:bold;
+}
+
+#hexagramDisplay{
+	
+	
+}
+
+.commentDate{
+	float: right;	
+}
+
+.commentDiv div{
+	color:#999999;
+	font-size:12px;
+	padding:20px 30px;
+}
+
+.commentDiv{
+	margin:20px 0;
+	clear: both;
+	background-color:#f4f4f4;
+	float: left;
+	width: 100%;
+}
+
+.addCommentDiv{
+	
+}

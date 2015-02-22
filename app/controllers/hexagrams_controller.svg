@@ -1,0 +1,87 @@
+<?php
+class HexagramsController extends AppController {
+
+	var $name = 'Hexagrams';
+		
+	function index() {
+		$this->Hexagram->recursive = 2;
+		
+		$pageParams = $this->params;
+		
+		$this->set('pageParams', $pageParams);
+		
+		$this->set('hexagrams', $this->paginate());
+	}
+
+	function view($id = null) {
+		if (!$id) {
+			$this->Session->setFlash(__('Invalid hexagram', true));
+			$this->redirect(array('action' => 'index'));
+		}
+		$this->set('hexagram', $this->Hexagram->read(null, $id));
+	}
+	
+	///////////////////////////////////////////////////////////////////////
+	/// START Hexagram add
+	///
+	function add($id = null) {
+	
+		if (!empty($this->data)) {
+			$this->Hexagram->create();
+			if ($this->Hexagram->save($this->data)) {
+				$this->Session->setFlash(__('The hexagram has been saved', true));
+				$this->redirect(array('action' => 'index'));
+			} else {
+				$this->Session->setFlash(__('The hexagram could not be saved. Please, try again.', true));
+			}
+		}
+		
+		/// Values for date select options
+		$this->loadModel('Tronc');
+		$troncs = $this->Tronc->find('all');
+		$this->loadModel('Branche');
+		$branches = $this->Branche->find('all');
+		/// Find all the data about the question we rae adding a hexagram to
+		$questions = $this->Hexagram->Question->find('first', array('conditions' => array('Question.id' => $id))); //Get the questions data with this ID
+		/// Get all page passed parameters
+		$pageParams = $this->params;
+		/// Send all above data to view for rendering
+		$this->set(compact('questions', 'pageParams', 'troncs', 'branches'));
+		
+	}	/// END Hexagram add
+
+
+	function edit($id = null) {
+		if (!$id && empty($this->data)) {
+			$this->Session->setFlash(__('Invalid hexagram', true));
+			$this->redirect(array('action' => 'index'));
+		}
+		if (!empty($this->data)) {
+			if ($this->Hexagram->save($this->data)) {
+				$this->Session->setFlash(__('The hexagram has been saved', true));
+				$this->redirect(array('action' => 'index'));
+			} else {
+				$this->Session->setFlash(__('The hexagram could not be saved. Please, try again.', true));
+			}
+		}
+		if (empty($this->data)) {
+			$this->data = $this->Hexagram->read(null, $id);
+		}
+		$questions = $this->Hexagram->Question->find('list');
+		$this->set(compact('questions'));
+	}
+
+	function delete($id = null) {
+		if (!$id) {
+			$this->Session->setFlash(__('Invalid id for hexagram', true));
+			$this->redirect(array('action'=>'index'));
+		}
+		if ($this->Hexagram->delete($id)) {
+			$this->Session->setFlash(__('Hexagram deleted', true));
+			$this->redirect(array('action'=>'index'));
+		}
+		$this->Session->setFlash(__('Hexagram was not deleted', true));
+		$this->redirect(array('action' => 'index'));
+	}
+}
+?>

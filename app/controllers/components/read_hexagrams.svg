@@ -1,0 +1,156 @@
+<?php
+	
+class ReadHexagramsComponent extends Object{
+	
+		
+	////////////////////////////////////////////
+	/// START findHexagramId
+	function findHexagramId($hexagram){
+		$hexagram_id = $hexagram['Hexagram']['id'];
+		return $hexagram_id;	
+	}/// END findHexagramId
+	
+	
+	////////////////////////////////////////////
+	/// START findDBTraits
+	function findDBTraits($hexagram_id){
+		$DBTraitsInstance = ClassRegistry::init('Trait');
+		$DBTraits = $DBTraitsInstance->find('all', array('order' => 'Trait.traitPosition DESC', 'conditions' => array('Trait.hexagram_id' => $hexagram_id), 'recursive' => -1));
+		return $DBTraits;	
+	}/// END findDBTraits
+	
+
+	////////////////////////////////////////////
+	/// START findChildHexagram
+	function findChildHexagram($hexagram_id){
+		$DBHexagramInstance = ClassRegistry::init('Hexagram');
+		$childHexagram = $DBHexagramInstance->find('first', array('conditions' => array('Hexagram.parent_id' => $hexagram_id)));
+		return $childHexagram;	
+	}/// END findChildHexagram
+
+	
+	////////////////////////////////////////////
+	/// START cleanUpTrait
+	function cleanUpTrait($traitArray){
+		
+		$i= 6;
+		
+		foreach($traitArray as $key => $value){
+			$cleanedUpTraitArray[$i] = $value['Trait'];
+			$i--;
+		}
+		
+		return $cleanedUpTraitArray;	
+	}/// END cleanUpTrait
+	
+	
+	////////////////////////////////////////////
+	/// START findHexagramComments
+	function findHexagramComments($hexagram_id){
+		$DBCommentInstance = ClassRegistry::init('Comment');
+		$hexagramComments = $DBCommentInstance->find('all', array('conditions' => array('Comment.hexagram_id' => $hexagram_id), 'order' => 'Comment.created DESC', 'recursive' => -1));
+		return $hexagramComments;	
+	}/// END findHexagramComments
+	
+	
+	
+	
+	////////////////////////////////////////////
+	/// START cleanUpComments
+	function cleanUpComments($hexagramComments){
+
+		foreach($hexagramComments as $commentIndex => $commentValue){
+			
+			$hexagramCommentsClean[] = $commentValue['Comment'];
+			
+
+		}
+		
+		return $hexagramCommentsClean;	
+	}/// END cleanUpComments
+	
+	
+	
+	////////////////////////////////////////////
+	/// START doReadHexagrams
+	function doReadHexagrams($hexagram){
+		
+		// find hexagram_id
+		$hexagram_id = $this->findHexagramId($hexagram);
+		
+		
+		
+		// reading traits 
+		$mainDBTraits = $this->findDBTraits($hexagram_id);
+		
+		//////////////////////////////////////////////////////////////
+		// fetching all data
+		
+		// reading childHexagram
+		$childHexagram = $this->findChildHexagram($hexagram_id);
+		
+		// find hexagram_id for childHexagram
+		if (!empty($childHexagram)) {
+			$childHexagramId = $this->findHexagramId($childHexagram);
+		}		
+		
+		// reading mutated or child traits 
+		if (!empty($childHexagram)) {
+			$mutatedDBTraits = $this->findDBTraits($childHexagramId);
+		}	
+		
+		//  Fetching hexagram comments
+		if (!empty($hexagram['Comment'])) {
+			$hexagramComments = $this->findHexagramComments($hexagram_id);			
+		}
+		
+		//////////////////////////////////////////////////////////////
+		// Setting or resetting data
+		
+		// Reset main Trait
+		unset($hexagram['Trait']);
+		$hexagram['Trait'] = $mainDBTraits;
+		
+		// Set $childHexagram
+		if (!empty($childHexagram)) {
+			$hexagram['ChildHexagram'] = $childHexagram['Hexagram'];
+		}else{
+			$hexagram['ChildHexagram'] = '';
+		}
+		
+		// Set $mutatedTraits
+		if (!empty($childHexagram)) {
+			$hexagram['mutatedTraits'] = $mutatedDBTraits;
+		}else{
+			$hexagram['mutatedTraits'] = '';
+		}
+
+		
+		//////////////////////////////////////////////////////////////
+		// cleaning up all data
+		
+		// clean up main Trait
+		$mainTraitCleanup = $this->cleanUpTrait($hexagram['Trait']);
+		unset($hexagram['Trait']);
+		$hexagram['Trait'] = $mainTraitCleanup;
+		
+		// clean up mutated Trait
+		if (!empty($childHexagram)) {
+			$mutatedTraitCleanup = $this->cleanUpTrait($hexagram['mutatedTraits']);
+			unset($hexagram['mutatedTraits']);
+			$hexagram['mutatedTraits'] = $mutatedTraitCleanup;
+		}
+		//  clean up hexagram comments
+		$hexagramCommentsClean = $this->cleanUpComments($hexagramComments);
+		unset($hexagram['Comment']);
+		$hexagram['Comment'] = $hexagramCommentsClean;
+		
+		// return $hexagram['mutatedTraits'];
+		
+		return $hexagram;
+		
+	}/// END doReadHexagrams
+	
+}
+
+?>

@@ -1,0 +1,1 @@
+allData=|var1=1|var2=6|var3=Blessure|var4=1|var5=1|var6=10|var7=Affrontement|var8=0

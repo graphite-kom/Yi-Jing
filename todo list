@@ -1,0 +1,44 @@
+1 - Add all data generated from component to hexagram data
+	
+							should be 			OK
+
+2 - build mutated hexagram
+	2.1 - generate mutated refHex				Ok
+	2.2 - generate mutated branches 			Ok
+	
+3 - build eff util 								Ok
+
+4 - build switch if no mutated hexagram			Ok
+4 - build view for hexagram						Ok
+5 - build mausolee behavior 					Ok
+6 - build relationship behavior 				Ok
+
+7 - Arrange navigation
+8 - build batching 
+9 - build analysis
+10 - build comments
+11 - build search
+
+12 - build function to check data
+13 - place hexagram parenthood
+14 - lighten up application with 				Ok
+     contain instead of init
+15 - make sure question id gets to hexagram add page
+16 - place hexagram values
+17 - build folders 
+
+18 - test sessions with cookies disabled
+
+/////////////
+
+	Subscribe to Jazz
+
+	List technologies and outlooks :
+		PSD
+		Flash
+		Flex
+		Photography
+		Lighting
+		Video
+		3D
+		Finance

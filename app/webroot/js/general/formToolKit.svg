@@ -1,0 +1,170 @@
+//////////////////////////////////////////////////////////////////////////////
+/////		START formToolKit.js
+//////////////////////////////////////////////////////////////////////////////
+	
+	//////////////////////////////////////////////////////////////////////////////
+	///	START other event functions
+
+	//////////////////////////////////////////////////////////////////////////////
+	///	START formAction
+	function formAction(){
+		$.ajax({
+			data:$("#formSubmit").closest("form").serialize(), 
+			dataType:"html",
+			beforeSend:function(){
+				console.info("Processing validation");
+			},
+			success:function (data, textStatus) {
+				console.warn("Validation returned");
+				$("#feedbackDiv").html(data);
+			},
+			type:"post", 
+			
+			url:"\/eclipse-prototypes\/mockdatas\/response"
+			
+		});
+	}
+	///	END formAction
+	
+	
+	
+	//////////////////////////////////////////////////////////////////////////////
+	///	START DomReady functions
+	
+	
+		//////////////////////////////////////////////////////
+		/// START DomReady variables
+		loadInfo = {'img' : 'loadinfo.gif', 'alt' : 'Loading', 'styleCl' : 'loadinfo', 'msg' : 'Loading'};
+		/// END DomReady variables
+		
+		//////////////////////////////////////////////////////
+		/// START getIconHtml
+		function getIconHtml(icon, iconPath){
+			
+			divHtml = "<div class=\"" + icon.styleCl + "\"><img src=\"http://" + iconPath + icon.img + "\" alt=\"" + icon.alt + "\" /><div>" + icon.msg + "</div></div>";
+			
+			return divHtml;
+			
+		}
+		/// END getIconHtml
+	
+		//////////////////////////////////////////////////////
+		/// START loadIcons
+		function loadIcons(iconPath){
+			
+			myIcon = getIconHtml(loadInfo, iconPath);
+			
+			$("div.submit").append(myIcon);
+			
+		}
+		/// END loadIcons
+	
+		//////////////////////////////////////////////////////
+		/// START matchDBfields
+		function matchDBfields(modelName, formObj){
+			
+			// debugger;
+			
+			JsonObj = JSON.stringify(formObj);
+			
+			// console.log('json : ' + this.JSObj);
+			
+			// urlParam = {"data[Mockdata][mockdatafield1]":"blaz","data[Mockdata][mockdatafield2]":"blaz","data[Mockdata][mockdatafield3]":"blaz"};
+				
+			// urlParam = 'method=POST&data[Mockdata][mockdatafield1]=&data[Mockdata][mockdatafield2]=&data[Mockdata][mockdatafield3]=root&data[Mockdata][mockdatafield4]=yes&data[Mockdata][mockdatafield5]=0&data[Mockdata][mockdatafield6]=psw&data[Mockdata][mockdatafield7]=';
+			
+			  var urlParam = 
+			  { 
+			    "sales": [ 
+			      { "firstname" : "John", "lastname" : "Brown", "Occupation" : "Soda boy" },
+			      { "firstname" : "Marc", "lastname" : "Johnson", "Occupation" : "Soda boy" },
+			      { "firstname" : "Mary", "lastname" : "Johnson", "Occupation" : "Soda boy" },
+			      { "firstname" : "Joe", "lastname" : "Johnson", "Occupation" : "Soda boy" },
+			      { "firstname" : "Chris", "lastname" : "Johnson", "Occupation" : "Soda boy" },
+			      { "firstname" : "Mike", "lastname" : "Johnson", "Occupation" : "Soda boy" }
+			      
+			    ]// end of sales array
+			  }
+			
+			$.ajax({
+				
+				data:urlParam, 
+				
+				//contentType: 'application/json; charset=utf-8',
+				
+				dataType:"html",
+				
+				beforeSend:function(){
+					console.info("Processing validation");
+				},
+				
+				success:function (data, textStatus) {
+					console.warn("Validation returned");
+					$("#feedbackDiv").html(data);
+				},
+				
+				type:"post", 
+								
+				url:"\/eclipse-prototypes\/XmlHtmlRequest\/getTableFieldNames\/"+modelName
+			});
+			
+		}
+		/// END matchDBfields
+		
+		//////////////////////////////////////////////////////
+		/// START mapFieldAttributes
+		function mapFieldAttributes(fieldType){
+	
+			this.fieldMap = [];
+			
+			for(i = 0; i<fieldType.length;i++){
+				this.tmpObj = {
+					id: 	fieldType[i].id,
+					name: 	fieldType[i].name,
+					type: 	fieldType[i].type
+				};
+				// same as above
+				/*this.tmpObj = {};
+				this.tmpObj["id"] = fieldType[i].id;
+				this.tmpObj["name"] = fieldType[i].name;
+				this.tmpObj["type"] = fieldType[i].type;*/
+				
+				this.fieldMap[i] = this.tmpObj;			
+			}
+			
+			return this.fieldMap;
+		}
+		/// END mapFieldAttributes
+		
+		//////////////////////////////////////////////////////
+		/// START buildFormObj
+		function buildFormObj(submitButtonID){
+			
+			this.formObj = {};
+
+			this.formObj.inputs = mapFieldAttributes(submitButtonID.closest("form").find("input"));
+			this.formObj.selects = mapFieldAttributes(submitButtonID.closest("form").find("select"));
+			this.formObj.textareas = mapFieldAttributes(submitButtonID.closest("form").find("textarea"));	
+			
+			return this.formObj;
+		}
+		/// END buildFormObj
+		
+		//////////////////////////////////////////////////////
+		/// START loadFormElements
+		function loadFormElements(iconPath, modelName, submitButtonID, methodName){
+			
+			this.formObj = this.buildFormObj(submitButtonID);
+			
+			// match DB fields with page form fields
+			this.fieldSet = this.matchDBfields(modelName, this.formObj);
+			
+			
+		}
+		/// END loadFormElements
+
+		
+		
+	///	END DomReady functions
+	//////////////////////////////////////////////////////////////////////////////
+	

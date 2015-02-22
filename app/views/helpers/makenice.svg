@@ -1,0 +1,102 @@
+<?php
+
+class MakeniceHelper extends AppHelper{
+
+	function changeContent($myString){
+	
+		$this->myChangedString = $myString.' Hello World!!';
+
+		return $this->myChangedString;
+	
+	}
+	
+	function getVarType($unknownVar){
+		
+		$this->varType = gettype($unknownVar);
+		
+		
+		return $this->varType;
+	}
+	
+	function getStatus($unknownVar){
+	
+		//$this->typedVar = $this->getVarType($unknownVar);
+		/*
+		if(isset($this->unknownVar)){
+		
+		}else{
+			$this->unknownVar .= ' (UNDEFINED)';
+		}
+		
+		if($this->unknownVar == NULL){
+			$this->unknownVar .= ' (NULL)';
+		}
+		
+		
+		if(empty($this->unknownVar)){
+			$this->unknownVar .= ' (EMPTY)';
+		}
+		
+		
+		if(is_null($this->unknownVar)){
+			$this->unknownVar .= ' (NULL)';
+		}*/
+		
+		
+		
+		return $this->unknownVar;
+
+	}
+
+	function makenice($arrayListed){
+	
+		$this->arrayListed = $arrayListed;
+			
+		if(is_array($this->arrayListed)){
+		
+			if(empty($this->arrayListed)){
+				$this->makeniceContent .= '<div style="margin-left:50px; clear:both;">Array(EMPTY)</div>';
+			}else{
+				$this->makeniceContent .= 'Results : <br>';
+				
+				$this->total = count($this->arrayListed);
+			
+				$i = 1;
+				
+				foreach($this->arrayListed as $key => $value  ){
+					if(is_array($value)){
+						$this->makeniceContent .= '<div style="margin-left:30px;clear:both;">['.$key.'] => '.$value.' (';
+						$this->makenice($value);
+						$this->makeniceContent .= ')</div>';
+					}else{
+						$this->makeniceContent .= '<div style="margin-left:50px; clear:both;">'.$i.' - ['.$key.'] => '.$value;
+						if($i < $this->total){
+							$this->makeniceContent .=  ',</div>';
+						}else{
+							$this->makeniceContent .=  '</div>';
+						}
+	
+						$i++;
+					}
+					
+				}
+				
+			}
+			
+			
+			
+		}else{
+		
+			if(empty($this->arrayListed)){
+				$this->makeniceContent .=  '<div style="margin-left:50px; clear:both;">Variable : EMPTY </div>';
+			}else{
+				$this->makeniceContent .=  '<div style="margin-left:50px; clear:both;">Variable : '.$this->arrayListed.'</div>';
+			}
+		}
+		
+		return $this->makeniceContent;
+	}
+
+}
+
+?>

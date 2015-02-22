@@ -1,0 +1,79 @@
+<!-- START Hexagram View-->
+<div class="hexagrams view">
+<h2><?php  __('Hexagram');?></h2>
+	<!-- //////////////////////////////////////////////// -->
+	<!-- START header -->
+	<div class="hexViewHeader">
+		<div class="hexagramHeader-th"><?php __('Question'); ?> : <?php echo $this->Html->link($hexagram['Question']['questionField'], array('controller' => 'questions', 'action' => 'view', $hexagram['Question']['id'])); ?></div>
+		<div class="hexagramHeader"><strong><?php __('Efficace Utilitaire'); ?> : </strong><?php echo $hexagram['Question']['efficaceUtilitaire']; ?></div>
+		<div class="hexagramHeader"><strong><?php __('Element'); ?> : </strong><?php echo $hexagram['Hexagram']['element']; ?></div>
+		<div class="hexagramHeader"><strong><?php __('Created'); ?> : </strong><?php echo $hexagram['Hexagram']['created']; ?></div>
+		<div class="hexagramHeaderBreak"><strong><?php __('Annee Tronc'); ?> : </strong><?php echo $hexagram['Hexagram']['anneeTronc']; ?></div>
+		<div class="hexagramHeader"><strong><?php __('Annee Branche'); ?> : </strong><?php echo $hexagram['Hexagram']['anneeBranche']; ?></div>
+		<div class="hexagramHeader"><strong><?php __('Annee Tronc'); ?> : </strong><?php echo $hexagram['Hexagram']['anneeTronc']; ?></div>
+		<div class="hexagramHeader"><strong><?php __('Mois Tronc'); ?>: </strong><?php echo $hexagram['Hexagram']['moisTronc']; ?></div>
+		<div class="hexagramHeader"><strong><?php __('Mois Branche'); ?> : </strong><?php echo $hexagram['Hexagram']['moisBranche']; ?></div>
+		<div class="hexagramHeader"><strong><?php __('Jour Tronc'); ?> : </strong><?php echo $hexagram['Hexagram']['jourTronc']; ?></div>
+		<div class="hexagramHeader"><strong><?php __('Jour Branche'); ?> : </strong><?php echo $hexagram['Hexagram']['jourBranche']; ?></div>
+	</div>
+	<!-- END header -->
+	<!-- START Related Traits-->
+	<div class="related">
+	<h3><?php __('Related Traits');?></h3>
+	<?php if (!empty($hexagram['Trait'])):?>
+		<table cellpadding = "0" cellspacing = "0">
+			<tr>
+				<th><?php __('Id'); ?></th>
+				<th><?php __('Hexagram Id'); ?></th>
+				<th><?php __('TraitValue'); ?></th>
+				<th class="actions"><?php __('Actions');?></th>
+			</tr>
+			<?php
+				$i = 0;
+				foreach ($hexagram['Trait'] as $trait):
+					$class = null;
+					if ($i++ % 2 == 0) {
+						$class = ' class="altrow"';
+					}
+				?>
+			<tr<?php echo $class;?>>
+				<td><?php echo $trait['id'];?></td>
+				<td><?php echo $trait['hexagram_id'];?></td>
+				<td><?php echo $trait['traitValue'];?></td>
+				<td class="actions">
+					<?php echo $this->Html->link(__('View', true), array('controller' => 'traits', 'action' => 'view', $trait['id'])); ?>
+					<!--<?php /* echo $this->Html->link(__('Edit', true), array('controller' => 'traits', 'action' => 'edit', $trait['id'])); */ ?> -->
+					<?php echo $this->Html->link(__('Delete', true), array('controller' => 'traits', 'action' => 'delete', $trait['id']), null, sprintf(__('Are you sure you want to delete # %s?', true), $trait['id'])); ?>
+				 </td>
+			</tr>
+			<?php endforeach; ?>
+		</table>
+	<?php endif; ?>
+		<!-- 
+		<div class="actions">
+			<ul>
+				<li><?php /* echo $this->Html->link(__('New Trait', true), array('controller' => 'traits', 'action' => 'add')); */ ?> </li>
+			</ul>
+		</div>
+		 -->
+	</div>
+	<!-- END Related Traits-->
+</div>
+<!-- END Hexagram View-->
+<div class="actions">
+	<h3><?php __('Actions'); ?></h3>
+	<ul>
+		
+		<li><?php echo $this->Html->link(__('Edit Hexagram', true), array('action' => 'edit', $hexagram['Hexagram']['id'])); ?> </li>
+		<li><?php echo $this->Html->link(__('Delete Hexagram', true), array('action' => 'delete', $hexagram['Hexagram']['id']), null, sprintf(__('Are you sure you want to delete # %s?', true), $hexagram['Hexagram']['id'])); ?> </li>
+		<li><?php echo $this->Html->link(__('List Hexagrams', true), array('action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Hexagram', true), array('action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Questions', true), array('controller' => 'questions', 'action' => 'index')); ?> </li>
+		<!-- 
+		<li><?php /* echo $this->Html->link(__('New Question', true), array('controller' => 'questions', 'action' => 'add')); */ ?> </li>
+		<li><?php /* echo $this->Html->link(__('List Traits', true), array('controller' => 'traits', 'action' => 'index')); */ ?> </li>
+		<li><?php /* echo $this->Html->link(__('New Trait', true), array('controller' => 'traits', 'action' => 'add')); */ ?> </li>
+		 -->
+	</ul>
+</div>
+

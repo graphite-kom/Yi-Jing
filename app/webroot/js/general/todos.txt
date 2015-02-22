@@ -1,0 +1,29 @@
+
+	1 - Determine validation method
+		- all
+		- each
+
+	2 - Determine displayMethod
+		- all
+			a - Determine response location on page
+				- before
+				- after
+
+			b - Determine validation status
+				- Ok
+				- Warning
+				- Error
+
+			c - Determine validation message
+
+		- each
+			a - Determine response type
+				- div
+				- bubble
+
+			b - Determine validation status
+				- Ok
+				- Warning
+				- Error
+
+			c - Determine validation message

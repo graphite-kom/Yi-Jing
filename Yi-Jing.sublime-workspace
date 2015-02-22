@@ -1,0 +1,424 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"machines",
+				"machines_found"
+			],
+			[
+				"machine",
+				"machine_found"
+			],
+			[
+				"pdv",
+				"pdv_found"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"fo",
+				"form	Tag"
+			],
+			[
+				"h",
+				"h4	Tag"
+			],
+			[
+				"ex",
+				"extract_mode"
+			],
+			[
+				"anim_fou",
+				"anim_found_id"
+			],
+			[
+				"pub",
+				"public_key"
+			],
+			[
+				"nim",
+				"nim_demo_array"
+			],
+			[
+				"error",
+				"Error"
+			],
+			[
+				"err",
+				"error_to_string"
+			],
+			[
+				"print",
+				"print_r"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 67.0,
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Set Syntax: SQL"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 384.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Applications/MAMP/htdocs/eclipse-prototypes/app/config/database.php",
+		"/Applications/MAMP/htdocs/eclipse-prototypes/app/index.php",
+		"/Applications/MAMP/htdocs/eclipse-prototypes/app/.htaccess",
+		"/Applications/MAMP/htdocs/eclipse-prototypes/app/webroot/index.php",
+		"/Applications/MAMP/htdocs/eclipse-prototypes/.htaccess",
+		"/Users/thierry/Documents/acces confidentiel/salonbellesmontres.com/infos.txt",
+		"/Applications/MAMP/htdocs/eclipse-prototypes/app/config/core.php",
+		"/Applications/MAMP/htdocs/le-salon-de-l-homme-V6/index.php",
+		"/Applications/MAMP/htdocs/le-salon-de-l-homme-V6/includes/header.php",
+		"/Applications/MAMP/htdocs/le-salon-de-l-homme-V6/includes/footer.php",
+		"/Applications/MAMP/htdocs/le-salon-de-l-homme-V6/templates/music.php",
+		"/Applications/MAMP/htdocs/le-salon-de-l-homme-V6/css/layout.php",
+		"/Applications/MAMP/htdocs/le-salon-de-l-homme-V6/css/media.css",
+		"/Applications/MAMP/htdocs/git-annonces-bimediatv-2015/annonce/connection.php",
+		"/Applications/MAMP/htdocs/git-annonces-bimediatv-2015/annonce/etape0.php",
+		"/Applications/MAMP/htdocs/git-annonces-bimediatv-2015/annonce/etape0-n.php",
+		"/Applications/MAMP/htdocs/git-annonces-bimediatv-2015/annonce/etape2_log.php",
+		"/Applications/MAMP/htdocs/git-annonces-bimediatv-2015/db/migration/20150220000000_add_amount_column_to_annonce_bimedia.sql",
+		"/Applications/MAMP/htdocs/annonces-bimediatv-php5/connectionOff.php",
+		"/Applications/MAMP/htdocs/annonces-bimediatv-php5/ticketV4/resultValiderVente.php",
+		"/Applications/MAMP/htdocs/annonces-bimediatv-php5/ticketV4/GetTicket.php",
+		"/Applications/MAMP/htdocs/annonces-bimediatv-php5/ticketV4/GetTicketResult.php",
+		"/Applications/MAMP/htdocs/annonces-bimediatv-php5/ticketV4/generateur_ticket_gratuit.php",
+		"/Users/thierry/Desktop/noueavux-produits.csv",
+		"/Volumes/web/bimediatv-com-php5.3/administration/x_crond/annonce_facture_cron.php",
+		"/Applications/MAMP/htdocs/annonces-bimediatv-php5/ticketV4/accueil.php",
+		"/Applications/MAMP/htdocs/annonces-bimediatv-php5/ticketV4/ValideVente.php",
+		"/Applications/MAMP/htdocs/annonces-bimediatv-php5/ticketV4/annoncesProduitResult.php",
+		"/Applications/MAMP/htdocs/annonces-bimediatv-php5/ticketV4/annoncesListeProduit.php",
+		"/Volumes/web/bimediatv-com-php5.3/screen/bimediaScreen/pubPlayerAnimCounterv3.php",
+		"/Volumes/web/bimediatv-com-php5.3/screen/bimediaScreen/anim_counter_v3.js",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/libraries/._connection_info.php",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/libraries/connection_info.php",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/libraries/idiorm/idiorm.php",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/libraries/paris/paris.php",
+		"/Volumes/web/Documents/Documentation Technique BimediaTV/mysql_commands.txt",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/libraries/CustomLogWriter.php",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/libraries/config.inc.php",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/db/Maintenance/Maintenance.sql",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/libraries/CustomErrorHandler.php",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/libraries/gizmo_box.php",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/index.php",
+		"/Users/thierry/Documents/acces confidentiel/salon-homme/enregistrement-domaines-2014-03-11.txt",
+		"/Volumes/web/anim_stat_janvier_2015/Dumps/machine_extraction.mysql",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/interface/templates/request_machine_extraction.php",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/interface/templates/home.php",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/interface/templates/animation_log.php",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/interface/includes/header.php",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/interface/includes/footer.php",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/db/Maintenace/Maintenance.sql",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/data-migration.php",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/libraries/Slim/Slim/Environment.php",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/libraries/Slim/Slim/Middleware/PrettyExceptions.php",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/interface/index.php",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/libraries/Slim/Slim/Slim.php",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/libraries/Slim/Slim/Exception/Stop.php",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/libraries/Slim/Slim/Exception/Pass.php",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/libraries/Slim/Slim/Router.php",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/interface/test_stuff.php",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/libraries/Slim/Slim/Http/Response.php",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/libraries/Slim/Slim/Middleware.php",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/test_stuff.php",
+		"/Users/thierry/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/libraries/cryptlib.php",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/libraries/Slim/Slim/Log.php",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/libraries/ErrorMiddleware.php",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/libraries/custom_log_writer.php",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/error_test.php",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/libraries/Slim/Slim/LogWriter.php",
+		"/Volumes/web/Documents/Documentation Technique BimediaTV/procedure MAJ des bases et blacklists.txt",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/libraries/Slim/Slim/Middleware/MethodOverride.php",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/libraries/Slim/Slim/Http/Util.php",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/libraries/Slim/Slim/Helper/Set.php",
+		"/Applications/MAMP/htdocs/compteur-de-diffusion-test-performance/index.php",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/test_script.php",
+		"/Volumes/web/git-player/serveur/compteur-de-diffusion/init_db/init_db.sql",
+		"/Volumes/web/anim_stat_janvier_2015/Dumps/New scripts/1_new_tables_script.mysql",
+		"/Volumes/web/Documents/Documentation Technique BimediaTV/rsync_command.txt",
+		"/Users/thierry/Desktop/infos.xml",
+		"/Users/thierry/Documents/Demandes de requetes BDD/Demandes Damien/Listing villes de - 10k hab. janvier-2015/sql.txt",
+		"/Volumes/web/anim_stat_janvier_2015/Dumps/db_compteur-diffusion_2015-01-26.sql",
+		"/Volumes/web/anim_stat_janvier_2015/Dumps/New scripts/2_data-migration.mysql",
+		"/Volumes/web/anim_stat_janvier_2015/Dumps/New scripts/1_new_tables_script.sql",
+		"/Applications/MAMP/htdocs/le-salon-de-l-homme-V6/templates/film.php",
+		"/Applications/MAMP/htdocs/le-salon-de-l-homme-V6/gettext/Locale/en_US/LC_MESSAGES/messages.po",
+		"/Applications/MAMP/htdocs/le-salon-de-l-homme-V6/gettext/Locale/fr_FR/LC_MESSAGES/messages.po",
+		"/Volumes/web/Documents/Certification-PHP-Formation/ObjetAvance/testLog.php",
+		"/Volumes/web/Documents/Certification-PHP-Formation/ObjetAvance/classes/Romain/Log/LoggerFileAvecAbstract.php",
+		"/Volumes/web/Documents/Certification-PHP-Formation/ObjetAvance/vendor/psr/log/Psr/Log/LogLevel.php",
+		"/Volumes/web/Documents/Certification-PHP-Formation/ObjetAvance/vendor/psr/log/Psr/Log/LoggerInterface.php",
+		"/Volumes/web/Documents/Certification-PHP-Formation/ObjetAvance/vendor/psr/log/Psr/Log/AbstractLogger.php",
+		"/Volumes/web/Documents/Certification-PHP-Formation/ObjetAvance/vendor/psr/log/Psr/Log/LoggerTrait.php",
+		"/Volumes/web/Documents/Certification-PHP-Formation/ObjetAvance/classes/Romain/Log/LoggerFileAvecTrait.php",
+		"/Volumes/web/Documents/Certification-PHP-Formation/ObjetAvance/classes/Romain/Log/LoggerFileAvecInterface.php",
+		"/Volumes/web/Documents/Certification-PHP-Formation/ObjetAvance/vendor/psr/log/Psr/Log/NullLogger.php",
+		"/Volumes/web/Documents/Certification-PHP-Formation/ObjetAvance/test.log",
+		"/Volumes/web/Documents/Certification-PHP-Formation/Objet/classes/Log/LogFile.php",
+		"/Volumes/web/Documents/Certification-PHP-Formation/Objet/classes/Utility/Registre.php",
+		"/Volumes/web/Documents/Certification-PHP-Formation/Objet/classes/Log/SousNamespace/ExempleQuiLog.php",
+		"/Volumes/web/Documents/Certification-PHP-Formation/Objet/testLogFile.php",
+		"/Volumes/web/Documents/Certification-PHP-Formation/Objet/includes/autoload.php",
+		"/Volumes/web/Documents/Certification-PHP-Formation/Basics/variables.php",
+		"/Volumes/web/Documents/Certification-PHP-Formation/Basics/test_include.php",
+		"/Volumes/web/Documents/Certification-PHP-Formation/Basics/constants.php",
+		"/Volumes/web/Documents/Certification-PHP-Formation/Basics/boubleForEach.php",
+		"/Volumes/web/Documents/Certification-PHP-Formation/Array/exemple.php",
+		"/Volumes/web/Documents/Certification-PHP-Formation/Functions/functions.php",
+		"/Volumes/web/Documents/Certification-PHP-Formation/Objet/classes/Model/Groupe.php",
+		"/Volumes/web/Documents/Certification-PHP-Formation/Objet/testModel.php",
+		"/Volumes/web/Documents/Certification-PHP-Formation/Objet/testSession.php",
+		"/Volumes/web/Documents/Certification-PHP-Formation/Objet/classes/Utility/Session.php",
+		"/Users/thierry/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Volumes/web/Documents/Certification-PHP-Formation/Tick/tick.php",
+		"/Users/thierry/Library/Application Support/Sublime Text 2/Packages/User/SQLExec.sublime-settings",
+		"/Users/thierry/Library/Application Support/Sublime Text 2/Packages/SQLExec/Default (OSX).sublime-keymap",
+		"/Users/thierry/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 136.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Applications/MAMP/htdocs/git-annonces-bimediatv-2015/annonce",
+			"/Applications/MAMP/htdocs/annonces-bimediatv-php5/ticketV4",
+			"/Applications/MAMP/htdocs/annonces-bimediatv-php5",
+			"/Applications/MAMP/htdocs/annonces-bimediatv-php5fixerPrixTicket",
+			"/Applications/MAMP/htdocs/annonces-bimediatv-php5/ticketV4",
+			"/Volumes/web/git-player/serveur/compteur-de-diffusion",
+			"/Volumes/web/git-player/serveur/compteur-de-diffusion/libraries/Slim",
+			"/Volumes/web/git-player/serveur/compteur-de-diffusion",
+			"/Volumes/web/git-player/serveur/compteur-de-diffusion/libraries/Slim",
+			"<open folders>",
+			"/Volumes/web/Documents/Certification-PHP-Formation,/Volumes/web/git-player,<open folders>",
+			"/Volumes/web/Documents/Certification-PHP-Formation,/Volumes/web/git-player",
+			"/Volumes/web/Documents/Certification-PHP-Formation"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"film",
+			"media-video-film",
+			"fixerPrixTicket",
+			"Prix",
+			"fixerPrixTicket",
+			"get_ttc_price",
+			"annonce_bimedia",
+			"fixerPrixTicket",
+			"0000000",
+			"fixerPrixTicket",
+			"plan_ann_rem",
+			"annonce_rem",
+			"rem",
+			"montant",
+			"annonce_rem",
+			"masque",
+			"montant",
+			"encais",
+			"verifV4",
+			" $",
+			"persi",
+			"ORM",
+			"PDO",
+			"DEFAULT_CONNECTION",
+			"$_config",
+			"new PDO",
+			"$_config",
+			"_setup_db_config",
+			"driver_options",
+			"PDO",
+			"persist",
+			"var_dump",
+			"throw",
+			"anim_found",
+			"var_dump",
+			"hourly_play_counts()",
+			"HourlyPlayCountMachines",
+			"machines()",
+			"machines_array",
+			"last_record_date",
+			"extract_mode",
+			"date_time",
+			"intervals_found",
+			"'",
+			"\"",
+			"file",
+			")){",
+			"$ip_address",
+			"with message",
+			"exception 'Exception' with message",
+			"getTraceAsString",
+			"AnimCount",
+			"notFound",
+			"defaultNotFound",
+			"http_response_code",
+			"error",
+			"callErrorHandler",
+			"defaultError",
+			"Page Not Found",
+			"500",
+			"	    	try {\n\n	            $this->next->call();\n	        \n	        } catch (Exception $e) {\n\n	        	$error_date 		= date('Y-m-d H:i:s');\n	        	$error_number 		= $e->getCode();\n	        	$error_message 		= $e->getMessage();\n	        	$error_file 		= $e->getFile();\n	        	$error_line_number	= $e->getLine();\n	        	$error_trace		= $e->getTraceAsString();\n\n	        	$error_to_string	= $error_date . \" | Code : \".$error_number.\" | \".$error_message.\" | file : \".$error_file.\" | line number :\".$error_line_number.\"\\n\";\n	        	$error_to_string	.= \"Stack trace:\\n\";\n	        	$error_to_string	.= $error_trace.\"\\n\";\n\n	        	file_put_contents(ERROR_LOG_PATH, $error_to_string, FILE_APPEND);\n\n	        	var_dump($app->response->getStatus());\n\n	        }",
+			"Stack",
+			"Stack trace",
+			"Stack trace:",
+			"getTraceAsString",
+			"ROOT_PATH",
+			"show_array_machines",
+			"ROOT_PATH",
+			"!!\";\n",
+			"ErrorException",
+			"handleErrors",
+			"Exception",
+			"write",
+			"getLog",
+			"log_error",
+			"');\n",
+			"register_shutdown_function",
+			"write",
+			"class CustomLogWriter extends \\Slim\\LogWriter{\n\n	public function __construct($ressource){\n\n		parent::__construct($ressource);\n\n	}\n\n}",
+			"log.writer",
+			" }",
+			"getLog",
+			"register_shutdown_function",
+			"Stack trace",
+			"Stack trace:",
+			"connection",
+			"Stack trace:",
+			"media-video-film",
+			"$context",
+			"Registre",
+			"__toString",
+			"mysql"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\"",
+			"'",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 234.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 312.0,
+	"status_bar_visible": true
+}
