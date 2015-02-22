@@ -96,6 +96,16 @@
 		echo '<div class="mainDiv"><div class="mainCell">';
 		echo $renderHexagram->doRenderHexagram($hexagram).'<br/><br/>';
 		/////
+
+		// Reverse Hexagram
+
+		echo "<hr/>";
+
+		$renderReverseHexagram->doRenderReverseHexagram($hexagram);
+
+		echo "<hr/>";
+
+		/////
 		echo '<!-- START Comment form -->';
 		echo '<div id="titleAddComment" style="background-color:#006666;clear:both; margin:10px 0 0 0;" onclick="javascript:showAddComment();">';
 		echo '<div style="margin:0 20px; padding:10px 0; color:ffffff;">Add a comment +</div>';
@@ -143,10 +153,14 @@
 		}*/
 		
 		
+		// $toBeMapped = array(
+		// 	'Hexagram' => $hexagram,
+		// 	'pageData' => $pageData
+		// 	// 'letsSeeAllThisData' => $letsSeeAllThisData 
+		// );
+
 		$toBeMapped = array(
-			'Hexagram' => $hexagram,
-			'pageData' => $pageData
-			// 'letsSeeAllThisData' => $letsSeeAllThisData 
+			'Hexagram' => $hexagram['Trait']
 		);
 		
 		echo $makenice->exportMap($toBeMapped); 

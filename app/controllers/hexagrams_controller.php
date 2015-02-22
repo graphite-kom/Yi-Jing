@@ -5,7 +5,7 @@ class HexagramsController extends AppController {
 	
 	var $components = array('Completearray', 'Preparesaving', 'ReadHexagrams', 'Analysis');
 	
-	var $helpers = array('RenderHexagram'); 
+	var $helpers = array('RenderHexagram', 'RenderReverseHexagram'); 
 	
 	var $layout = 'yijing';
 

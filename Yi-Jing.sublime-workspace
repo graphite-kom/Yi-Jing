@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"trai",
+				"trait_final_value"
+			],
+			[
+				"trait",
+				"trait_value"
+			],
+			[
+				"tra",
+				"trait_position"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"reverse",
+				"reverse_values_array"
+			],
+			[
 				"machines",
 				"machines_found"
 			],
@@ -63,6 +83,70 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/controllers/hexagrams_controller.php",
+			"settings":
+			{
+				"buffer_size": 10206,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/controllers/components/completearray.php",
+			"settings":
+			{
+				"buffer_size": 9872,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/controllers/components/setbranches.php",
+			"settings":
+			{
+				"buffer_size": 19828,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/controllers/components/setrelationships.php",
+			"settings":
+			{
+				"buffer_size": 4765,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/helpers/render_hexagram.php",
+			"settings":
+			{
+				"buffer_size": 8872,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/helpers/render_reverse_hexagram.php",
+			"settings":
+			{
+				"buffer_size": 2041,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/hexagrams/view-hexagram.php",
+			"settings":
+			{
+				"buffer_size": 7718,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/helpers/makenice.php",
+			"settings":
+			{
+				"buffer_size": 9298,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -100,6 +184,10 @@
 	},
 	"file_history":
 	[
+		"/Applications/MAMP/htdocs/eclipse-prototypes/app/views/helpers/render_reverse_hexagram.php",
+		"/Applications/MAMP/htdocs/eclipse-prototypes/app/views/helpers/render_hexagram.php",
+		"/Applications/MAMP/htdocs/eclipse-prototypes/app/views/hexagrams/view-hexagram.php",
+		"/Applications/MAMP/htdocs/eclipse-prototypes/app/views/hexagrams/index-hexagram.php",
 		"/Applications/MAMP/htdocs/eclipse-prototypes/app/config/database.php",
 		"/Applications/MAMP/htdocs/eclipse-prototypes/app/index.php",
 		"/Applications/MAMP/htdocs/eclipse-prototypes/app/.htaccess",
@@ -246,6 +334,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"			$",
+			"renderHexagram",
+			"topBranches",
+			"getProperIndex",
+			"'].'</",
 			"film",
 			"media-video-film",
 			"fixerPrixTicket",
@@ -358,8 +451,224 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/controllers/hexagrams_controller.php",
+					"settings":
+					{
+						"buffer_size": 10206,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								492,
+								492
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/controllers/components/completearray.php",
+					"settings":
+					{
+						"buffer_size": 9872,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8783,
+								8796
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4985.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/controllers/components/setbranches.php",
+					"settings":
+					{
+						"buffer_size": 19828,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3170,
+								3170
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/controllers/components/setrelationships.php",
+					"settings":
+					{
+						"buffer_size": 4765,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1507.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/views/helpers/render_hexagram.php",
+					"settings":
+					{
+						"buffer_size": 8872,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8202,
+								8202
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/views/helpers/render_reverse_hexagram.php",
+					"settings":
+					{
+						"buffer_size": 2041,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2037,
+								2037
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/views/hexagrams/view-hexagram.php",
+					"settings":
+					{
+						"buffer_size": 7718,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7424,
+								7424
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1379.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/views/helpers/makenice.php",
+					"settings":
+					{
+						"buffer_size": 9298,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8739,
+								8739
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 220.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
